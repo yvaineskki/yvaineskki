@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentino?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <h1>Hello World</h1>
-  <p>This is my GitHub Pages site!</p>
+    <div id="main-content" class="container">
+        <div class="hearts">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+        <h1>Will You Be My Valentine?</h1>
+        <p class="message">My Baby</p>
+        <div class="buttons">
+            <button id="yes-btn" class="btn yes">Yes! <i class="fas fa-heart"></i></button>
+            <button id="no-btn" class="btn no">No ???</button>
+        </div>
+    </div>
+
+    <!-- GIF Display Section -->
+    <div id="gif-section" class="gif-overlay" style="display: none;">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExejJiYXd5N3F1djdrbzZuNHVqNGZkb3g4ZGptdmR6emMwbXpjeXJzayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif" alt="Cat Kissing GIF" class="cat-gif">
+        <div class="gif-message">
+            <h2>yay! i Love you! </h2>
+            <button id="continue-btn" class="btn continue">Click mo to lovey</button>
+        </div>
+    </div>
+
+    <!-- Date Plan Section -->
+    <div id="date-plan-section" class="date-plan-overlay" style="display: none;">
+        <div class="date-plan-container">
+            <div class="hearts floating-hearts">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+            <h2>Our Valentine Date Plan 💕</h2>
+            <div class="plan-details">
+                <div class="plan-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <strong>Date & Time: </strong> February 13, Time: 10:30
+                </div>
+                <div class="plan-item">
+                    <i class="fas fa-utensils"></i>
+                    <strong>Call: </strong> Discord
+                </div>
+                <div class="plan-item">
+                    <i class="fas fa-tshirt"></i>
+                    <strong>What to watch: </strong> NOT YET SURE I WILL HANAP PA
+                </div>
+                <div class="plan-item">
+                    <i class="fas fa-gift"></i>
+                    <strong>What u will do: </strong> nothing! just open ur camera and i'll share my screen
+                </div>
+                <div class="plan-item">
+                    <i class="fas fa-surprise"></i>
+                    <strong>Surprise Element: </strong> i love you so much!
+                </div>
+            </div>
+            <button id="back-to-gif-btn" class="btn back">mwa mwa :3</button>
+        </div>
+    </div>
+
+    <div id="no-section" class="no-overlay" style="display: none;">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWM0OHc5YXY2bHBlMGI1ZHFhYXdiZGVtZDd6MnkwODl4Y3JwOWRoZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QcULAkIc3fkD6/giphy.gif" alt="Funny Confused Cat GIF" class="funny-gif">
+        <div class="no-message">
+            <h2>NO WAY! Syempre walang other option baby, YES LANG! hehe</h2>
+            <button id="yes-again-btn" class="btn yes-again">KAINIS! magagalit ako!!!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
